@@ -9,7 +9,7 @@ name_list=["Maiya","XiaoLu","Panpan"]
 # print(name_list.index("Maiyas"))
 
 # count:统计指定数据在当前列表中出现的次数
-c
+
 print(name_list.count("Maiyas"))
 
 # len():访问列表长度，其实就是返回列表中的数据个数
