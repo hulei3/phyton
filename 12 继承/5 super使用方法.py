@@ -12,9 +12,10 @@ class School(Master):
 
         def make_cake(self):
             print(f"运用了{self.jishu}煎饼果子")
-            super(School.self).__init__()
-            super(School.self).make_cake()
-
+           # super(School.self).__init__()
+           # super(School.self).make_cake()
+            super().__init__()
+            super().make_cake()
     # 在子类
 # 2.定义:定义徒弟类，继承师傅类
 class Prentice(School):
@@ -34,11 +35,11 @@ class Prentice(School):
         # Master.make_cake(self)
       # 方法二:
   # 2.2 super(当前类名，self),函数（）
-        super(Prentice.self).__init__()
-        super(Prentice.self).make_cake()
+       # super(Prentice.self).__init__()
+       # super(Prentice.self).make_cake()
 
     #2.2 super()无参数
-       #  super().__init__()
-       #  super().make_cake()
+        super().__init__()
+        super().make_cake()
 tom=Prentice()
 tom.make_old_cake()
