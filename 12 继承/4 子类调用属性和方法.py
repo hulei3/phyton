@@ -9,7 +9,7 @@ class Master(object):
         def a(self):
             print(1)
 
-class school(object):
+class School(Master):
     def __init__(self):
         self.jishu="{六星煎饼果子配方}"
 
@@ -21,7 +21,7 @@ class school(object):
 
     # 在子类
 # 2.定义:定义徒弟类，继承师傅类
-class Prentice(school,Master):
+class Prentice(School,Master):
     def __init__(self):
         self.jishu="{古代煎饼果子配方}"
 
@@ -44,7 +44,7 @@ class  Tusun(Prentice):
 xiaotom=Tusun()
 xiaotom.make_cake()
 xiaotom.make_master_cake()
-
+xiaotom.make_school_cake()
 # 3.定义:使用徒弟类创建对象，调用师傅类的属性和方法
 # tom=Prentice()
 # print(tom.jishu)

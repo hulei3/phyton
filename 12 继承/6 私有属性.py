@@ -23,22 +23,3 @@ class Prentice(School):
 
     def make_cake(self):
         print(f"运用了独创{self.jishu}煎饼果子")
-
-  # 在子类重写父母的同名属性和方法
-  # 实现一次性调用父类的方法
-    def make_old_cake(self):
-  # 方法一:父类名，函数（）
-        # School.__init__(self)
-        # School.make_cake(self)
-        # Master.__init__(self)
-        # Master.make_cake(self)
-      # 方法二:
-  # 2.2 super(当前类名，self),函数（）
-        super(Prentice.self).__init__()
-        super(Prentice.self).make_cake()
-
-    #2.2 super()无参数
-       #  super().__init__()
-       #  super().make_cake()
-tom=Prentice()
-tom.make_old_cake()
