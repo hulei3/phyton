@@ -46,7 +46,7 @@ class Home(object):
            print(f"{item.name}")
 
     def __str__(self):
-        return f"房子的地理位置在{self.address},房屋面积是{self.area},剩余面积是{self.free_area},"f"家具有(self.furniture)
+       return f"房子的地理位置在{self.address},"f"房屋面积是{self.area},"f"剩余面积是{self.free_area},"f"家具有(self.furniture)
 
 #家具的实例
 bed = Furniture("双人床", 20)
